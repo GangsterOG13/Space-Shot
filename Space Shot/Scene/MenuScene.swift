@@ -9,11 +9,6 @@ class MenuScene: PerentScene {
             Assets.shared.isLoaded = true
         }
        
-//        let background = SKSpriteNode(imageNamed: "backgroundMenu")
-//        background.anchorPoint = CGPoint(x: 0.0, y: 0.0)
-//        background.size = self.size // растянули фон на весь экран
-//        background.zPosition = 0
-//        self.addChild(background) // добавили фон на нашу сцену
         let background = SKSpriteNode(imageNamed: "backgroundMenu3")
         background.anchorPoint = CGPoint(x: 0.0, y: 0.0)
         background.size = self.size // растянули фон на весь экран
@@ -22,21 +17,11 @@ class MenuScene: PerentScene {
         
         setHeader(withName: nil, andBackground: "header1", positionY: 150)
         
-//        self.backgroundColor = SKColor(red: 0.15, green: 0.15, blue: 0.3, alpha: 1.0)//фон
-        
-//        let header = SKSpriteNode(imageNamed: "header1")
-//
-//        header.position = CGPoint(x: self.frame.midX, y: self.frame.midY + 150)//размещаем по середине
-//        self.addChild(header)//добавляем на сцену
-        
-        //setHeader(withName: nil, andBackground: "header1")
-        
         let titles = ["play", "options", "best", "info"] // текст для кнопок
         
         for (index, title) in titles.enumerated() {
             
             let button = ButtonNode(titled: title, backgroundName: "button_background", fontSize: nil)
-            // CGFloat(100 * index) смещаем по у в зависимости от индекса кнопки
             button.position = CGPoint(x: self.frame.midX, y: (self.frame.midY ) - CGFloat(80 * index))
             button.name = title
             button.zPosition = 2
@@ -45,8 +30,6 @@ class MenuScene: PerentScene {
             addChild(button)
             
         }
-        
-        
         
         let supportButton = ButtonNode(titled: "?", backgroundName: "button_background", fontSize: 40)
         
@@ -58,17 +41,7 @@ class MenuScene: PerentScene {
         supportButton.setScale(0.7)
         addChild(supportButton)
 //
-//        let button2 = ButtonNode(titled: "options", backgroundName: "button_background")
-//        button2.position = CGPoint(x: self.frame.midX, y: self.frame.midY - 100)
-//        button2.name = "options"
-//        button2.label.name = "options"
-//        addChild(button2)
-//
-//        let button3 = ButtonNode(titled: "best", backgroundName: "button_background")
-//        button3.position = CGPoint(x: self.frame.midX, y: self.frame.midY - 200)
-//        button3.name = "best"
-//        button3.label.name = "best"
-//        addChild(button3)
+
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -106,20 +79,8 @@ class MenuScene: PerentScene {
             
         }else if node.name == "support" {
            
-            let urlAsk = "https://forms.gle/JhmiHZDeXRoQDeGt5"
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "SupportViewController") as! SupportViewController
-            
-            vc.url =  URL(string: urlAsk)
-            vc.backToGame = true
-
-            UIView.transition(with: self.view!, duration: 0.3, options: .transitionFlipFromRight, animations: {
-                self.view?.window?.rootViewController = vc
-            })
+            Router.shared.goToSupport(view: self.view!)
   
         }
-        
-        
-        
     }
 }

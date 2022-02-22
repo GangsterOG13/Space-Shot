@@ -18,7 +18,6 @@ class PerentScene: SKScene {
             
         }
         
-       
         header.zPosition = 3
         self.addChild(header)//добавляем на сцену
         

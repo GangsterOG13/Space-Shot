@@ -55,14 +55,6 @@ class PlayerPlane: SKSpriteNode {
                 self.xAcceleration = CGFloat(acceleration.x) * 0.7 + self.xAcceleration * 0.3
             }
         }
-        
-       // let planeWaitAction = SKAction.wait(forDuration: 1.0)
-//        let planeDirectionCheckAction = SKAction.run { [unowned self] in
-//            self.movementDirectionCheck()
-//        }
-//        let planeSequence = SKAction.sequence([planeWaitAction, planeDirectionCheckAction])
-//        let planeSequenceForeve = SKAction.repeatForever(planeSequence)
-       // self.run(planeWaitAction)
         turnPlane(direction: moveDirection)
         
     }

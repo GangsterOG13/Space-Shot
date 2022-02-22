@@ -14,12 +14,9 @@ class StartViewController: UIViewController {
         if game {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let vc = storyboard.instantiateViewController(withIdentifier: "GameViewController") as! GameViewController
-//            vc.modalPresentationStyle = .fullScreen
-//            vc.modalTransitionStyle = .crossDissolve
             UIView.transition(with: self.view!, duration: 0.0, options: .transitionFlipFromRight, animations:
             {
-            self.view?.window?.rootViewController = vc
-            }, completion: { completed in
+                self.view?.window?.rootViewController = vc
             })
         }
     }

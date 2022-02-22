@@ -53,6 +53,7 @@
 		88FDBCC7278BA3890082D5CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88FDBCC5278BA3890082D5CE /* Assets.xcassets */; };
 		88FDBCCA278BAE3A0082D5CE /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDBCC9278BAE3A0082D5CE /* GameOver.swift */; };
 		88FDBCD0278BB9E20082D5CE /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FDBCCF278BB9E20082D5CE /* GameSettings.swift */; };
+		E06DC01527C54B060072CBF5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06DC01427C54B060072CBF5 /* Router.swift */; };
 		E0C2F83B27C4E3FB00CF7F21 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2F83A27C4E3FB00CF7F21 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		88FDBCC5278BA3890082D5CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88FDBCC9278BAE3A0082D5CE /* GameOver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		88FDBCCF278BB9E20082D5CE /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		E06DC01427C54B060072CBF5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		E0C2F83A27C4E3FB00CF7F21 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +226,7 @@
 				88FDBCBC278B82B70082D5CE /* SceneManager.swift */,
 				88FDBCCF278BB9E20082D5CE /* GameSettings.swift */,
 				8781B2DE279037FF003D1E7E /* AppUtility.swift */,
+				E06DC01427C54B060072CBF5 /* Router.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				88FDBCD0278BB9E20082D5CE /* GameSettings.swift in Sources */,
 				88FDBC8D278A76570082D5CE /* PlayerPlane.swift in Sources */,
 				88FDBC8B278A69440082D5CE /* Cloud.swift in Sources */,
+				E06DC01527C54B060072CBF5 /* Router.swift in Sources */,
 				E0C2F83B27C4E3FB00CF7F21 /* StartViewController.swift in Sources */,
 				88FDBC78278A59A20082D5CE /* GameViewController.swift in Sources */,
 				8781B2DD2790262A003D1E7E /* SupportViewController.swift in Sources */,
@@ -515,7 +519,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2GLR26RLC;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Space-Shot-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -546,7 +550,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J2GLR26RLC;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Space-Shot-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
